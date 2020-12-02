@@ -75,7 +75,11 @@ const TagIndex = ({ posts, allTags, fullTag, allPosts, paginationData }) => {
           <Grid container spacing={4}>
             <Grid item xs={12}>
               <Box textAlign="center">
-                <LoadMore variant="outlined" onClick={loadMorePosts}>
+                <LoadMore
+                  variant="outlined"
+                  color="secondary"
+                  onClick={loadMorePosts}
+                >
                   Load More
                 </LoadMore>
               </Box>

@@ -33,16 +33,12 @@ export const theme = createMuiTheme({
   overrides: {
     MuiOutlinedInput: {
       notchedOutline: {
-        borderColor: '#3f51b5',
         borderWidth: '2px',
       },
       root: {
         '&$focused $notchedOutline': {
-          borderColor: '#3f51b5',
-          color: 'white',
-          fieldset: {
-            color: 'white',
-          },
+          color: 'secondary',
+          fieldset: {},
         },
       },
     },
@@ -53,9 +49,7 @@ export const theme = createMuiTheme({
     },
     MuiFormLabel: {
       root: {
-        '&$focused': {
-          color: 'white',
-        },
+        '&$focused': {},
       },
     },
   },

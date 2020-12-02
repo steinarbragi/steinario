@@ -28,6 +28,7 @@ const TagFilter = ({ allTags, fullTag }) => {
             <Link href="/tag/news" passHref>
               <TagButton
                 variant={fullTag.slug === 'news' ? 'contained' : 'outlined'}
+                color="secondary"
               >
                 All
               </TagButton>
@@ -38,6 +39,7 @@ const TagFilter = ({ allTags, fullTag }) => {
               <li key={singleTag.id}>
                 <Link href={`/tag/${singleTag.slug}`} passHref>
                   <TagButton
+                    color="secondary"
                     variant={
                       singleTag.slug === fullTag.slug ? 'contained' : 'outlined'
                     }

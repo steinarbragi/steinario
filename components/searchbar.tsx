@@ -28,6 +28,7 @@ const SearchBar = ({ setSearchTerm, allPosts, setSearchResults }) => {
       label="Search"
       margin="dense"
       variant="outlined"
+      color="secondary"
       onChange={handleSearchChange}
       InputProps={{
         endAdornment: (

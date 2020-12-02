@@ -1,7 +1,6 @@
 /* eslint-disable react/no-danger */
 import React from 'react';
 import styled from 'styled-components';
-import Head from 'next/head';
 import { Container } from '@material-ui/core';
 import { Layout } from '../../components/layout';
 import { getPageSlugs, getPageBySlug } from '../../utils/ghost/api';
@@ -52,9 +51,6 @@ const Page = ({ page }) => {
   return (
     <Layout>
       <>
-        <Head>
-          <title>Starborne | MMO Space Strategy Game | {page.title}</title>
-        </Head>
         <Container maxWidth="md">
           <PostContent>
             {page.feature_image && (

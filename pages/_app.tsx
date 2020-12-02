@@ -76,59 +76,7 @@ function MyApp({ Component, pageProps }: AppProps): ReactElement {
         <MuiThemeProvider theme={theme}>
           <ThemeProvider theme={theme}>
             <Head>
-              <title>Starborne | MMO Space Strategy Game | Play Free Now</title>
-              <meta
-                name="description"
-                content="Starborne is a free PC Space MMORTS game set in a rich Sci-Fi world. Build and expand your empire, fight and forge alliances on a huge seamless strategic map."
-              />
-              <meta property="og:locale" content="en_US" />
-              <meta property="og:type" content="website" />
-              <meta
-                property="og:title"
-                content="Starborne | MMO Space Strategy Game | Play Free Now"
-              />
-              <meta
-                property="og:description"
-                content="Starborne is a free PC Space MMORTS game set in a rich Sci-Fi world. Build and expand your empire, fight and forge alliances on a huge seamless strategic map."
-              />
-              <meta property="og:url" content="https://join.starborne.com/" />
-              <meta
-                property="og:site_name"
-                content="Starborne Sovereign Space"
-              />
-              <meta property="og:image" content="/img/meta.png" />
-              <meta property="og:image:secure_url" content="/img/meta.png" />
-              <meta property="og:image:width" content="1024" />
-              <meta property="og:image:height" content="576" />
-              <meta name="twitter:card" content="summary_large_image" />
-              <meta
-                name="twitter:description"
-                content="Starborne is a free PC Space MMORTS game set in a rich Sci-Fi world. Build and expand your empire, fight and forge alliances on a huge seamless strategic map."
-              />
-              <meta
-                name="twitter:title"
-                content="Starborne | MMO Space Strategy Game | Join for Free Now"
-              />
-              <meta name="twitter:site" content="@starbornegame" />
-              <meta name="twitter:image" content="/img/meta.png" />
-              <meta name="twitter:creator" content="@starbornegame" />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: `(function (w, d, s, l, i) {
-			w[l] = w[l] || []; w[l].push({
-				'gtm.start':
-					new Date().getTime(), event: 'gtm.js'
-			}); var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-MRSPNPV');`,
-                }}
-              />
-              <noscript
-                dangerouslySetInnerHTML={{
-                  __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRSPNPV" height="0" width="0" style="display:none;visibility:hidden;"></iframe>`,
-                }}
-              />
+              <title>Steinar.io</title>
             </Head>
 
             <GlobalStyle />

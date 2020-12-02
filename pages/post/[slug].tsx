@@ -1,7 +1,6 @@
 /* eslint-disable react/no-danger */
 import React from 'react';
 import styled from 'styled-components';
-import Head from 'next/head';
 import { Container } from '@material-ui/core';
 import { Layout } from '../../components/layout';
 import {
@@ -57,9 +56,6 @@ const Post = ({ post, relatedPosts }) => {
   return (
     <Layout>
       <>
-        <Head>
-          <title>Starborne | MMO Space Strategy Game | {post.title}</title>
-        </Head>
         <Container maxWidth="md">
           <PostContent>
             {post.feature_image && (

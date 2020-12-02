@@ -24,13 +24,12 @@ const LoadMore = styled(Button)`
 `;
 
 const TagTitle = styled.h2`
-  color: white;
   margin-bottom: 0px;
   margin-top: 100px;
 `;
 
 const Line = styled.hr`
-  border-top: 1px solid ${(props) => props.theme.palette.primary.light};
+  border-top: 1px solid ${(props) => props.theme.palette.primary.dark};
   border-bottom: none;
   border-left: none;
   border-right: none;

@@ -77,7 +77,7 @@ export default function Header(): ReactElement {
 
   return (
     <Slide appear={false} direction="down" in={!trigger}>
-      <MainNav elevation={0} color="secondary">
+      <MainNav color="secondary">
         <Toolbar>
           <Link passHref href="/">
             <Logo>

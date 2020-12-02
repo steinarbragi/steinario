@@ -9,6 +9,8 @@ import {
   ThemeProvider as MuiThemeProvider,
   StylesProvider,
 } from '@material-ui/core/styles';
+import 'prismjs';
+import 'prismjs/themes/prism-okaidia.css';
 import GlobalStyle from '../components/styles/globals';
 import 'react-multi-carousel/lib/styles.css';
 

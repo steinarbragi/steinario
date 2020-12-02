@@ -5,6 +5,14 @@
       "ssr": true,
       "displayName": true,
       "preprocess": false
-    }]
+  }],     
+  [
+      "prismjs", {
+        "languages": ["javascript", "css", "html", "jsx"],
+        "plugins": ["line-numbers", "show-language", "copy-to-clipboard"],
+        "theme": "okaidia",
+        "css": true
+      }
+    ]
   ]
 }

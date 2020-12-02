@@ -16,6 +16,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "allowUmdGlobalAccess": true,
     "jsx": "preserve"
   },
   "include": [

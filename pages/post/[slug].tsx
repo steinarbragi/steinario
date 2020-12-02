@@ -1,5 +1,5 @@
 /* eslint-disable react/no-danger */
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { Container } from '@material-ui/core';
 import { Layout } from '../../components/layout';
@@ -88,11 +88,33 @@ export const PostContent = styled.div`
   ul {
     font-size: 24px;
   }
+  pre {
+    overflow-x: auto;
+    margin: 1.5em 0 3em;
+    padding: 20px;
+    max-width: 100%;
+    border: 1px solid #000;
+    color: var(--whitegrey);
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    background: #0e1012;
+    border-radius: 5px;
+    code {
+      color: #fff;
+    }
+  }
+  pre[class*='language-'],
+  code[class*='language-'] {
+    font-family: monospace, monospace;
+  }
 `;
 
 const Post = ({ post, relatedPosts }) => {
   let srcset;
   if (post.feature_image) srcset = getResponsiveImageSizes(post.feature_image);
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
   return (
     <Layout>
       <>

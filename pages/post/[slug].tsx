@@ -11,16 +11,49 @@ import {
 import getResponsiveImageSizes from '../../utils/getResponsiveImage';
 import RelatedPosts from '../../components/posts/relatedPosts';
 
-const PostContent = styled.div`
+export const PostContent = styled.div`
   padding: 40px;
   margin-top: 100px;
-
   ${(props) => props.theme.breakpoints.down('xs')} {
     padding: 70px 15px;
+  }
+  ${(props) => props.theme.breakpoints.up('md')} {
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    ol,
+    ul {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+  main .MuiContainer-root {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
   img {
     width: 100%;
     height: auto;
+    margin-top: 20px;
+  }
+  figure {
+    margin: 0;
+  }
+  figure img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  figcaption {
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding-top: 10px;
+    font-style: italic;
   }
   h1,
   h2,
@@ -37,12 +70,22 @@ const PostContent = styled.div`
     font-size: 34px;
   }
   h3 {
-    font-size: 24px;
+    font-size: 28px;
   }
   ul {
     font-size: 20px;
   }
   p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  blockquote {
+    font-size: 24px;
+    border-left: 3px solid #445384;
+    padding-left: 30px;
+  }
+  ol,
+  ul {
     font-size: 24px;
   }
 `;

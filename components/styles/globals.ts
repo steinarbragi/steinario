@@ -66,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
     src: url('/fonts/Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('/fonts/Roboto-ThinItalic-webfont.woff') format('woff'),
          url('/fonts/Roboto-ThinItalic-webfont.ttf') format('truetype'),
-         url('/fonts/Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License). 
+         url('/fonts/Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg');
     font-weight: 200;
     font-style: italic;
 }

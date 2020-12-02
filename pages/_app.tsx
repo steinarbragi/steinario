@@ -15,9 +15,9 @@ import 'react-multi-carousel/lib/styles.css';
 export const theme = createMuiTheme({
   palette: {
     primary: {
-      light: '#ffffff',
-      main: '#cfd8dc',
-      dark: '#9ea7aa',
+      light: '#b6ffff',
+      main: '#81d4fa',
+      dark: '#4ba3c7',
       contrastText: '#000000',
     },
     secondary: {
@@ -28,7 +28,18 @@ export const theme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: 'Axia Web',
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
   },
   overrides: {
     MuiOutlinedInput: {

@@ -1,7 +1,13 @@
 import { Grid } from '@material-ui/core';
+import styled from 'styled-components';
 import React from 'react';
-import { SectionTitle } from '../../pages';
 import PostCard from './postCard';
+
+export const SectionTitle = styled.h2`
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 48px 0px 16px;
+`;
 
 const RelatedPosts = ({ posts }) => {
   return (

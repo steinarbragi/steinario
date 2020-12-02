@@ -9,7 +9,7 @@ const LayoutStyle = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #161b2e;
+  background-color: ${(props) => props.theme.palette.primary.main};
   min-height: 100vh;
 `;
 

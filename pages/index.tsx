@@ -5,14 +5,6 @@ import Grid from '@material-ui/core/Grid';
 import { Layout } from '../components/layout';
 import { getAllPosts } from '../utils/ghost/api';
 import PostCard from '../components/posts/postCard';
-import Hero from '../components/home/hero';
-
-export const SectionTitle = styled.h2`
-  color: #6d84ff;
-  text-transform: uppercase;
-  font-size: 20px;
-  margin: 48px 0px 16px;
-`;
 
 const IndexContainer = styled(Container)`
   margin-top: 100px;
@@ -24,9 +16,7 @@ function Index({ news }): ReactElement {
   return (
     <Layout>
       <>
-        <Hero />
         <IndexContainer maxWidth="lg">
-          <SectionTitle>Latest News</SectionTitle>
           <Grid container spacing={4}>
             <Grid item xs={12} md={12} sm={12}>
               <PostCard

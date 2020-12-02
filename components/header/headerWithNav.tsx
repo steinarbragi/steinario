@@ -10,37 +10,28 @@ import {
   useMediaQuery,
   useTheme,
   Popper,
-  Paper,
   Grow,
   ClickAwayListener,
   MenuList,
   useScrollTrigger,
   Slide,
+  Paper,
 } from '@material-ui/core';
 
 const Logo = styled.a`
   flex: 1;
   margin-top: 6px;
+  color: ${(props) => props.theme.palette.primary.contrastText};
 `;
 
 const MainNav = styled(AppBar)`
-  color: white;
-  background-color: rgba(12, 16, 32, 0.75) !important;
-  .MuiButton-label {
-    font-size: 16px;
-    font-weight: bold;
-    color: #b3c1e0;
-  }
+  height: 60px;
 `;
 
 const NavMenuList = styled(MenuList)`
   li {
     height: 40px;
   }
-`;
-
-const MenuPaper = styled(Paper)`
-  background-color: ${(props) => props.theme.palette.primary.light};
 `;
 
 export default function Header(): ReactElement {
@@ -86,11 +77,11 @@ export default function Header(): ReactElement {
 
   return (
     <Slide appear={false} direction="down" in={!trigger}>
-      <MainNav elevation={0} color="primary">
+      <MainNav elevation={0} color="secondary">
         <Toolbar>
           <Link passHref href="/">
             <Logo>
-              <h1>Steinar.io</h1>
+              <h2>Steinar.io</h2>
             </Logo>
           </Link>
           {!mobile && (
@@ -121,7 +112,7 @@ export default function Header(): ReactElement {
                         placement === 'bottom' ? 'center top' : 'center bottom',
                     }}
                   >
-                    <MenuPaper>
+                    <Paper>
                       <ClickAwayListener onClickAway={handleClose}>
                         <NavMenuList
                           autoFocusItem={drawerOpen}
@@ -138,7 +129,7 @@ export default function Header(): ReactElement {
                           </li>
                         </NavMenuList>
                       </ClickAwayListener>
-                    </MenuPaper>
+                    </Paper>
                   </Grow>
                 )}
               </Popper>

@@ -14,7 +14,7 @@ import RelatedPosts from '../../components/posts/relatedPosts';
 const PostContent = styled.div`
   padding: 40px;
   margin-top: 100px;
-  color: white;
+
   ${(props) => props.theme.breakpoints.down('xs')} {
     padding: 70px 15px;
   }
@@ -32,7 +32,6 @@ const PostContent = styled.div`
   }
   h1 {
     font-size: 48px;
-    color: white;
   }
   h2 {
     font-size: 34px;
@@ -42,11 +41,9 @@ const PostContent = styled.div`
   }
   ul {
     font-size: 20px;
-    color: #b3c1e0;
   }
   p {
     font-size: 24px;
-    color: #b3c1e0;
   }
 `;
 

@@ -6,6 +6,7 @@ import moment from 'moment';
 import Grid from '@material-ui/core/Grid';
 import CardContent from '@material-ui/core/CardContent';
 import Paper from '@material-ui/core/Paper';
+import { Button } from '@material-ui/core';
 import getResponsiveImageSizes from '../../utils/getResponsiveImage';
 
 export const PostCardHeading = styled.h2`
@@ -14,12 +15,12 @@ export const PostCardHeading = styled.h2`
 `;
 
 export const BlueCard = styled(Paper)`
-  background-color: ${(props) => props.theme.palette.primary.dark};
-  color: ${(props) => props.theme.palette.text.secondary};
+  background-color: ${(props) => props.theme.palette.primary.light};
+  color: ${(props) => props.theme.palette.primary.contrastText};
+
   line-height: 1.3;
   width: 100%;
   position: relative;
-  border: 2px solid ${(props) => props.theme.palette.primary.light};
   .MuiCardContent-root {
     height: 220px;
     padding: 24px;
@@ -29,12 +30,12 @@ export const BlueCard = styled(Paper)`
     height: 250px;
     max-width: 100%;
     object-fit: cover;
-    margin: 0;
-    margin-bottom: -4px;
+    top: 0;
+    border-radius: 3px;
   }
   a {
     text-decoration: none;
-    color: #fff;
+    color: ${(props) => props.theme.palette.primary.contrastText};
   }
   a::before {
     display: block;
@@ -48,20 +49,15 @@ export const BlueCard = styled(Paper)`
   }
   p {
     font-size: 18px;
-    color: rgba(179, 193, 224, 1) !important;
     line-height: 150%;
   }
   span {
     font-size: 16px;
     font-weight: 600;
-    color: rgba(149, 163, 203, 1);
     margin-left: 5px;
   }
   min-height: 100%;
   box-sizing: border-box;
-  &:hover {
-    box-shadow: 0px 0px 24px rgba(63, 81, 181, 0.7);
-  }
   &.heropost {
     text-align: left;
     ${(props) => props.theme.breakpoints.up('sm')} {
@@ -70,8 +66,9 @@ export const BlueCard = styled(Paper)`
         margin-top: 30%;
       }
       img {
-        /* width: 798px; */
-        height: 448px;
+        height: 450px;
+        border-radius: 3px;
+        display: block;
       }
       h2 {
         font-size: 30px;
@@ -79,7 +76,6 @@ export const BlueCard = styled(Paper)`
       }
       p {
         font-size: 18px;
-        color: rgba(179, 193, 224, 1) !important;
       }
     }
   }
@@ -89,23 +85,10 @@ export const Excerpt = styled.p`
   text-decoration: none;
 `;
 
-export const Tag = styled.a`
-  font-size: 15px;
+export const Tag = styled(Button)`
   text-transform: uppercase;
-  padding: 4px 10px;
-  background-color: ${(props) => props.theme.palette.primary.light};
-  margin-right: 6px;
-  display: inline-block;
-  color: #d7e0f0;
-  font-weight: 600;
-  &:hover {
-    background-color: #576dcf;
-    color: #fff;
-  }
-  &:active {
-    background-color: rgba(39, 53, 155, 1);
-    color: #95a3cb;
-  }
+  margin-right: 10px;
+  padding: 2px 10px 2px 5px;
 `;
 
 export const DateField = styled.span`
@@ -113,26 +96,15 @@ export const DateField = styled.span`
   margin-top: 5px;
 `;
 
-const PostCard = ({
-  post,
-  isHero = false,
-  elevation = 0,
-  square = true,
-  className = '',
-}) => {
+const PostCard = ({ post, isHero = false, className = '' }) => {
   let srcset;
 
   if (post.feature_image) srcset = getResponsiveImageSizes(post.feature_image);
 
   const date = new Date(post.published_at);
   return (
-    <BlueCard
-      elevation={elevation}
-      square={square}
-      key={post.id}
-      className={className}
-    >
-      <Grid container spacing={2}>
+    <BlueCard key={post.id} className={className}>
+      <Grid container>
         <Grid item sm={isHero ? 7 : 12} xs={12}>
           {post.feature_image && (
             <Link href={`/post/${post.slug}`}>
@@ -160,7 +132,9 @@ const PostCard = ({
             {post.tags.map(
               (postTag: { name: string; slug: string; id: string }) => (
                 <Link key={postTag.id} href={`/tag/${postTag.slug}`} passHref>
-                  <Tag>{postTag.name}</Tag>
+                  <Tag color="primary" size="small" variant="contained">
+                    {postTag.name}
+                  </Tag>
                 </Link>
               )
             )}

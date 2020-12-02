@@ -4,12 +4,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const TagButton = styled(Button)`
-  border: 2px solid ${(props) => props.theme.palette.primary.light};
   padding: 3px 10px;
   font-weight: bold;
-  &.MuiButton-contained {
-    background-color: ${(props) => props.theme.palette.primary.light};
-  }
 `;
 
 const Taglist = styled.ul`

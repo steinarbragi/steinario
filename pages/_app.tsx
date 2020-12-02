@@ -14,27 +14,21 @@ import 'react-multi-carousel/lib/styles.css';
 
 export const theme = createMuiTheme({
   palette: {
-    type: 'dark',
     primary: {
-      main: '#111133',
-      dark: '#0C1020',
-      light: '#3f51b5',
+      light: '#ffffff',
+      main: '#cfd8dc',
+      dark: '#9ea7aa',
+      contrastText: '#000000',
     },
     secondary: {
-      main: '#0e9688',
+      light: '#ff7539',
+      main: '#ff3d00',
+      dark: '#c30000',
+      contrastText: '#000000',
     },
   },
   typography: {
     fontFamily: 'Axia Web',
-  },
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 720,
-      md: 1100,
-      lg: 1440,
-      xl: 1920,
-    },
   },
   overrides: {
     MuiOutlinedInput: {
@@ -54,9 +48,7 @@ export const theme = createMuiTheme({
     },
     MuiButton: {
       outlined: {
-        borderColor: '#3f51b5',
         borderWidth: '2px',
-        backgroundColor: 'rgba(63,81,181,0.25)',
       },
     },
     MuiFormLabel: {

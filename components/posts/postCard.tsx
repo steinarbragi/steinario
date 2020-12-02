@@ -31,7 +31,7 @@ export const BlueCard = styled(Paper)`
     max-width: 100%;
     object-fit: cover;
     top: 0;
-    border-radius: 3px;
+    border-radius: 3px 3px 0 0;
   }
   a {
     text-decoration: none;
@@ -67,7 +67,7 @@ export const BlueCard = styled(Paper)`
       }
       img {
         height: 450px;
-        border-radius: 3px;
+        border-radius: 3px 0 0 3px;
         display: block;
       }
       h2 {

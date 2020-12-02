@@ -26,6 +26,9 @@ const Logo = styled.a`
 
 const MainNav = styled(AppBar)`
   height: 60px;
+  .MuiButton-label {
+    font-size: 1.2rem;
+  }
 `;
 
 const NavMenuList = styled(MenuList)`

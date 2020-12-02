@@ -86,7 +86,8 @@ export const PostContent = styled.div`
   }
   ol,
   ul {
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 30px;
   }
   pre {
     overflow-x: auto;
@@ -94,18 +95,18 @@ export const PostContent = styled.div`
     padding: 20px;
     max-width: 100%;
     border: 1px solid #000;
-    color: var(--whitegrey);
+    color: #cfd2d3;
     font-size: 1.1rem;
     line-height: 1.2em;
     background: #0e1012;
     border-radius: 5px;
     code {
-      color: #fff;
+      color: #929296;
     }
   }
   pre[class*='language-'],
   code[class*='language-'] {
-    font-family: monospace, monospace;
+    font-family: 'Roboto Mono';
   }
 `;
 

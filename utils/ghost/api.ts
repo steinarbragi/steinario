@@ -101,29 +101,6 @@ export async function getFeaturedPosts() {
     });
 }
 
-export async function getFeaturedPages() {
-  return api.pages
-    .browse({
-      include: 'tags',
-      limit: '6',
-      filter: 'featured:true',
-    })
-    .catch((err: string) => {
-      console.error(err);
-    });
-}
-
-export async function getRoadmap() {
-  return api.pages
-    .browse({
-      limit: '1',
-      filter: 'slug:roadmap',
-    })
-    .catch((err: string) => {
-      console.error(err);
-    });
-}
-
 export async function getRelatedPosts(tag, id) {
   return api.posts
     .browse({

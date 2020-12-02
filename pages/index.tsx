@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import { Layout } from '../components/layout';
-import { getAllPosts } from '../utils/ghost/api';
+import { getFeaturedPosts } from '../utils/ghost/api';
 import PostCard from '../components/posts/postCard';
 
 const IndexContainer = styled(Container)`
@@ -40,7 +40,7 @@ function Index({ news }): ReactElement {
 }
 
 export async function getStaticProps() {
-  const news = await getAllPosts();
+  const news = await getFeaturedPosts();
   return {
     props: { news },
   };

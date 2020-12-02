@@ -11,16 +11,19 @@ import {
 } from '@material-ui/core/styles';
 import 'prismjs';
 import 'prismjs/themes/prism-okaidia.css';
+import 'fontsource-aleo';
+import 'fontsource-roboto-mono';
+import 'fontsource-oswald';
 import GlobalStyle from '../components/styles/globals';
 import 'react-multi-carousel/lib/styles.css';
 
 export const theme = createMuiTheme({
   palette: {
     primary: {
-      light: '#b6ffff',
-      main: '#81d4fa',
-      dark: '#4ba3c7',
-      contrastText: '#000000',
+      light: '#4f5b62',
+      main: '#263238',
+      dark: '#000a12',
+      contrastText: '#ffffff',
     },
     secondary: {
       light: '#ff7539',
@@ -30,18 +33,7 @@ export const theme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: [
-      '-apple-system',
-      'BlinkMacSystemFont',
-      '"Segoe UI"',
-      'Roboto',
-      '"Helvetica Neue"',
-      'Arial',
-      'sans-serif',
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(','),
+    fontFamily: 'Aleo',
   },
   overrides: {
     MuiOutlinedInput: {

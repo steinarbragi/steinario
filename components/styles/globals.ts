@@ -3,13 +3,18 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
-    font-family: Roboto, sans-serif;  
+    font-family: Aleo;
+    color: #ccc;
   }
   a {
-    color: #12a8f3;
+    color: #004cff;
+  }
+  h1,h2,h3,h4, .MuiButton-label {
+    font-family: "Oswald";
+    color: #fff;
   }
   pre, code {
-    font-family: monospace,monospace;
+    font-family: "Roboto Mono";
   }
 `;
 

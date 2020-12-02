@@ -5000,6 +5000,21 @@ follow-redirects@^1.10.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
+fontsource-aleo@^3.0.9:
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/fontsource-aleo/-/fontsource-aleo-3.0.9.tgz#1e20f3297e6eff60cda5fd2a228b655d1d80667b"
+  integrity sha512-jSFgfGEMXZH/7m0JNOrdhSpz3AS8N7qaYVAvh187ATLFRmiBhp2tYbx95Yu/b2BNNOjZwPoA08hcb9FTeKl44A==
+
+fontsource-oswald@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/fontsource-oswald/-/fontsource-oswald-3.0.3.tgz#31e8b1390688361c63f057f098055af3d88f5f03"
+  integrity sha512-Vddnq9YVLJGp3cNtNv7rgUZsE7HoJdYUcQF6QJ+F3aX63D7GgYgc8ZzCEw3KrhDQ6KwWlPkYiabAo9ODxi13ZQ==
+
+fontsource-roboto-mono@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/fontsource-roboto-mono/-/fontsource-roboto-mono-3.0.3.tgz#5897326b144543e8587ec6edd0cce7162ad27874"
+  integrity sha512-DhrrZR6CXyH8uKoSGTH6BEomGb8x9RqYq2QSHft+ALMTsx1UlnuIYIn2PW/3aS19KIs4YxjaTjIFAPKSyywIiA==
+
 fontsource-roboto@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/fontsource-roboto/-/fontsource-roboto-3.0.3.tgz#99c312babeabce22b3e933b3edf2951d4508f4f7"

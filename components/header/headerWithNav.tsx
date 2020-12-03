@@ -101,6 +101,10 @@ export default function Header(): ReactElement {
               <Link href="/tag/news" passHref>
                 <Button color="inherit">News</Button>
               </Link>
+              <Button href="https://www.linkedin.com/in/steinarbragi/">
+                LinkedIn
+              </Button>
+              <Button href="https://github.com/steinarbragi">GitHub</Button>
             </>
           )}
           {mobile && (
@@ -137,6 +141,16 @@ export default function Header(): ReactElement {
                             <Link href="/tag/news" passHref>
                               <Button color="inherit">News</Button>
                             </Link>
+                          </li>
+                          <li>
+                            <Button href="https://www.linkedin.com/in/steinarbragi/">
+                              LinkedIn
+                            </Button>
+                          </li>
+                          <li>
+                            <Button href="https://github.com/steinarbragi">
+                              GitHub
+                            </Button>
                           </li>
                         </NavMenuList>
                       </ClickAwayListener>

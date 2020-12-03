@@ -92,9 +92,7 @@ export default function Header(): ReactElement {
         <Toolbar>
           <Link passHref href="/">
             <Logo>
-              <h1 variant="h5" noWrap>
-                Steinar.io
-              </h1>
+              <h1>Steinar.io</h1>
             </Logo>
           </Link>
           {!mobile && (

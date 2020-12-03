@@ -4,7 +4,7 @@ import { Container } from '@material-ui/core';
 import { Layout } from '../../components/layout';
 import { getPageSlugs, getPageBySlug } from '../../utils/ghost/api';
 import getResponsiveImageSizes from '../../utils/getResponsiveImage';
-import { PostContent } from '../post/[slug]';
+import PostContent from '../../components/posts/postContent';
 
 const Page = ({ page }) => {
   let srcset;

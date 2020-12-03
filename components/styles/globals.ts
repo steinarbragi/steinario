@@ -81,8 +81,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .kg-bookmark-thumbnail img {
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      height: 180px;
       vertical-align: bottom;
       object-fit: cover;
   }

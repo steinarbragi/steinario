@@ -69,6 +69,7 @@ export const Tag = styled(Button)`
 export const DateField = styled.span`
   display: inline-block;
   margin-top: 5px;
+  font-family: 'Oswald';
 `;
 
 const PostCard = ({ post, isHero = false, className = '' }) => {

@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     color: #ccc;
   }
   a {
-    color: #004cff;
+    color: #4be6ff;
   }
   h1,h2,h3,h4, .MuiButton-label {
     font-family: "Oswald";

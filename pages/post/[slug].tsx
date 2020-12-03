@@ -36,16 +36,12 @@ export const PostContent = styled.div`
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
-  img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
   figure {
     margin: 0;
   }
-  figure img {
+  figure .kg-image {
     width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
   }
@@ -108,6 +104,48 @@ export const PostContent = styled.div`
   code[class*='language-'] {
     font-family: 'Roboto Mono';
   }
+  .kg-bookmark-icon img {
+    width: 1em;
+  }
+  .kg-gallery-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .kg-gallery-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .kg-gallery-image img {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .kg-gallery-row:not(:first-of-type) {
+    margin: 0.75em 0 0 0;
+  }
+
+  .kg-gallery-image:not(:first-of-type) {
+    margin: 0 0 0 0.75em;
+  }
+
+  .kg-gallery-card + .kg-image-card.kg-width-wide,
+  .kg-gallery-card + .kg-gallery-card,
+  .kg-image-card.kg-width-wide + .kg-gallery-card,
+  .kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
+    margin: -2.25em 0 3em;
+  }
+`;
+
+const FeatureImage = styled.img`
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const Post = ({ post, relatedPosts }) => {
@@ -122,7 +160,7 @@ const Post = ({ post, relatedPosts }) => {
         <Container maxWidth="md">
           <PostContent>
             {post.feature_image && (
-              <img
+              <FeatureImage
                 loading="lazy"
                 alt={post.title}
                 sizes="(max-width: 1000px) 400px, 700px"

@@ -35,7 +35,7 @@ export const BlueCard = styled(Paper)`
     ${(props) => props.theme.breakpoints.up('sm')} {
       .MuiCardContent-root {
         padding: 30px;
-        margin-top: 30%;
+        margin-top: 10%;
       }
       img {
         height: 450px;
@@ -116,7 +116,7 @@ const PostCard = ({ post, isHero = false, className = '' }) => {
             )}
             <DateField>{moment(date).format('ddd, ll')}</DateField>
 
-            <Excerpt>{`${post.excerpt.substring(0, 110)}...`}</Excerpt>
+            <Excerpt>{post.excerpt}</Excerpt>
           </CardContent>
         </Grid>
       </Grid>

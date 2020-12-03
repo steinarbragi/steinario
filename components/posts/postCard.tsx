@@ -38,7 +38,7 @@ export const BlueCard = styled(Paper)`
         margin-top: 10%;
       }
       img {
-        height: 450px;
+        height: 100%;
         border-radius: 3px 0 0 3px;
         display: block;
       }

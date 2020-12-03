@@ -21,19 +21,27 @@ import {
 const Logo = styled.a`
   flex: 1;
   margin-top: 6px;
-  color: ${(props) => props.theme.palette.primary.contrastText};
+  h1 {
+    color: ${(props) => props.theme.palette.secondary.contrastText};
+  }
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+  margin-top: -5px;
 `;
 
 const MainNav = styled(AppBar)`
   height: 60px;
   .MuiButton-label {
     font-size: 1.2rem;
+    color: ${(props) => props.theme.palette.secondary.contrastText};
   }
 `;
 
 const NavMenuList = styled(MenuList)`
   li {
     height: 40px;
+    color: ${(props) => props.theme.palette.secondary.contrastText};
   }
 `;
 
@@ -84,7 +92,9 @@ export default function Header(): ReactElement {
         <Toolbar>
           <Link passHref href="/">
             <Logo>
-              <h2>Steinar.io</h2>
+              <h1 variant="h5" noWrap>
+                Steinar.io
+              </h1>
             </Logo>
           </Link>
           {!mobile && (

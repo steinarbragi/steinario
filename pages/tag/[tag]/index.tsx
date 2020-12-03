@@ -29,7 +29,7 @@ const TagTitle = styled.h2`
 `;
 
 const Line = styled.hr`
-  border-top: 1px solid ${(props) => props.theme.palette.primary.dark};
+  border-top: 1px solid ${(props) => props.theme.palette.secondary.main};
   border-bottom: none;
   border-left: none;
   border-right: none;

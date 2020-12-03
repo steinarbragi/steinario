@@ -35,29 +35,6 @@ export const theme = createMuiTheme({
   typography: {
     fontFamily: 'Aleo',
   },
-  overrides: {
-    MuiOutlinedInput: {
-      notchedOutline: {
-        borderWidth: '2px',
-      },
-      root: {
-        '&$focused $notchedOutline': {
-          color: 'secondary',
-          fieldset: {},
-        },
-      },
-    },
-    MuiButton: {
-      outlined: {
-        borderWidth: '2px',
-      },
-    },
-    MuiFormLabel: {
-      root: {
-        '&$focused': {},
-      },
-    },
-  },
 });
 
 function MyApp({ Component, pageProps }: AppProps): ReactElement {

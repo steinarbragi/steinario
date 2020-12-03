@@ -5,11 +5,7 @@ import SearchIcon from '@material-ui/icons/Search';
 
 const SearchField = styled(TextField)`
   width: auto;
-  float: right;
-  svg {
-    height: 20px;
-    width: 20px;
-  }
+  margin-top: -4px;
 `;
 
 const SearchBar = ({ setSearchTerm, allPosts, setSearchResults }) => {
@@ -25,7 +21,7 @@ const SearchBar = ({ setSearchTerm, allPosts, setSearchResults }) => {
 
   return (
     <SearchField
-      label="Search"
+      placeholder="Search"
       margin="dense"
       variant="outlined"
       color="secondary"

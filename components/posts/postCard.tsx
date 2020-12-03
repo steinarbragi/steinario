@@ -17,52 +17,24 @@ export const PostCardHeading = styled.h2`
 export const BlueCard = styled(Paper)`
   background-color: ${(props) => props.theme.palette.primary.light};
   color: ${(props) => props.theme.palette.primary.contrastText};
-
-  line-height: 1.3;
-  width: 100%;
-  position: relative;
-  .MuiCardContent-root {
-    height: 220px;
-    padding: 24px;
-  }
+  min-height: 100%;
+  box-sizing: border-box;
   img {
     width: 100%;
     height: 250px;
     max-width: 100%;
     object-fit: cover;
-    top: 0;
     border-radius: 3px 3px 0 0;
   }
   a {
     text-decoration: none;
     color: ${(props) => props.theme.palette.primary.contrastText};
   }
-  a::before {
-    display: block;
-    width: 100%;
-  }
-  h2 {
-    font-size: 26px;
-    margin-top: -20px;
-    margin-bottom: 12px;
-    line-height: 120%;
-  }
-  p {
-    font-size: 18px;
-    line-height: 150%;
-  }
-  span {
-    font-size: 16px;
-    font-weight: 600;
-    margin-left: 5px;
-  }
-  min-height: 100%;
-  box-sizing: border-box;
   &.heropost {
     text-align: left;
     ${(props) => props.theme.breakpoints.up('sm')} {
       .MuiCardContent-root {
-        padding-right: 30px;
+        padding: 30px;
         margin-top: 30%;
       }
       img {
@@ -83,12 +55,15 @@ export const BlueCard = styled(Paper)`
 
 export const Excerpt = styled.p`
   text-decoration: none;
+  font-size: 18px;
+  line-height: 150%;
 `;
 
 export const Tag = styled(Button)`
   text-transform: uppercase;
   margin-right: 10px;
-  padding: 2px 10px 2px 5px;
+  font-size: 16px;
+  font-weight: 600;
 `;
 
 export const DateField = styled.span`

@@ -38,7 +38,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/no-namespace': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
-    'import/extensions': [1, { extensions: ['.jsx', '.ts', '.tsx'] }],
+    'import/extensions': [1, { extensions: ['.jsx', '.ts', '.tsx', '.css'] }],
     'import/no-extraneous-dependencies': [
       'error',
       {

@@ -4,14 +4,12 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: Aleo;
-    color: #ccc;
   }
   a {
     color: #4be6ff;
   }
   h1,h2,h3,h4, .MuiButton-label {
     font-family: "Oswald";
-    color: #fff;
   }
   pre, code {
     font-family: "Roboto Mono";

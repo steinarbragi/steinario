@@ -5,7 +5,6 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import {
-  createMuiTheme,
   ThemeProvider as MuiThemeProvider,
   StylesProvider,
 } from '@material-ui/core/styles';
@@ -14,28 +13,9 @@ import 'prismjs/themes/prism-okaidia.css';
 import 'fontsource-aleo';
 import 'fontsource-roboto-mono';
 import 'fontsource-oswald';
-import GlobalStyle from '../components/styles/globals';
+import theme from '../styles/material';
+import GlobalStyle from '../styles/globals';
 import 'react-multi-carousel/lib/styles.css';
-
-export const theme = createMuiTheme({
-  palette: {
-    primary: {
-      light: '#4f5b62',
-      main: '#263238',
-      dark: '#000a12',
-      contrastText: '#ffffff',
-    },
-    secondary: {
-      light: '#ff7539',
-      main: '#ff3d00',
-      dark: '#c30000',
-      contrastText: '#000000',
-    },
-  },
-  typography: {
-    fontFamily: 'Aleo',
-  },
-});
 
 function MyApp({ Component, pageProps }: AppProps): ReactElement {
   return (

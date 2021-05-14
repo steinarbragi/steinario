@@ -8,6 +8,7 @@ import Social from '../components/social';
 const IndexContainer = styled(Container)`
   margin-top: 150px;
   text-align: center;
+  color: white;
 `;
 
 function Index(): ReactElement {

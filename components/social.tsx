@@ -8,6 +8,7 @@ import { Box, IconButton } from '@material-ui/core';
 const SocialIcons = styled(Box)`
   svg {
     height: 40px;
+    color: white;
   }
   margin-top: 20px;
 `;

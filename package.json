@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS='--inspect' next",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next --port ${PORT:-3003}",
     "build": "next build && next export",
-    "start": "next start --port ${PORT:-3000}",
+    "start": "next start --port ${PORT:-3003}",
     "lint": "eslint . --ext .tsx"
   },
   "jest": {

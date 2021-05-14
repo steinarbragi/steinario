@@ -5,8 +5,8 @@ import {
   StylesProvider,
 } from '@material-ui/core/styles';
 import { StylesOptions } from '@material-ui/styles';
-import GlobalStyle from '../components/styles/globals';
-import { theme } from '../pages/_app';
+import theme from '../styles/material';
+import GlobalStyle from '../styles/globals';
 
 /* Workaround for inconsistent classname prefixes 
 that cause tests with Jest and Enzyme to fail when they shouldn't */

@@ -15,7 +15,7 @@ const SocialIcons = styled(Box)`
 
 const Social = () => (
   <SocialIcons>
-    <IconButton title="Twitter" href="https://twitter.com/starbornegame">
+    <IconButton title="Twitter" href="https://twitter.com/steinarbragi">
       <Twitter />
     </IconButton>
 

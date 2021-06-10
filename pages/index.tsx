@@ -13,16 +13,14 @@ const IndexContainer = styled(Container)`
 function Index(): ReactElement {
   return (
     <Layout>
-      <>
-        <IndexContainer maxWidth="lg">
-          <h1>Steinar Bragi Sigurðarson</h1>
-          <h2>Web and Mobile Developer</h2>
-          <Button href="/cv.pdf" color="secondary" variant="contained">
-            Download CV
-          </Button>
-          <Social />
-        </IndexContainer>
-      </>
+      <IndexContainer maxWidth="lg">
+        <h1>Steinar Bragi Sigurðarson</h1>
+        <h2>Web and Mobile Developer</h2>
+        <Button href="/cv.pdf" color="secondary" variant="contained">
+          Download CV
+        </Button>
+        <Social />
+      </IndexContainer>
     </Layout>
   );
 }

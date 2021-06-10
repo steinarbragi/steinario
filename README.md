@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-My very overengineered personal landing page. It's made with nextjs, material-ui, styled-components, TypeScript. There's a great tooling setup too, with eslint, prettier, jest. This can serve as starter boilerplate for other projects!
+My slightly overengineered personal landing page. It's made with nextjs, material-ui, styled-components, TypeScript. There's a great tooling setup too, with eslint, prettier, jest. This can serve as starter boilerplate for other projects!
 
 ## Prerequisites
 You'll need node.js and yarn. I reccommend using [NVM](https://github.com/nvm-sh/nvm) to manage node versions. We use the LTS version.

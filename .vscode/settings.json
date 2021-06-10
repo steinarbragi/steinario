@@ -1,6 +1,4 @@
 {
-  "vetur.format.defaultFormatter.js": "none",
-  "vetur.format.defaultFormatter.ts": "none",
   "editor.formatOnSave": false,
   "javascript.format.enable": false,
   "[javascript]": { "editor.formatOnSave": false},

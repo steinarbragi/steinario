@@ -2,11 +2,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
-import moment from 'moment';
 import Grid from '@material-ui/core/Grid';
 import CardContent from '@material-ui/core/CardContent';
-import Paper from '@material-ui/core/Paper';
-import { Button } from '@material-ui/core';
+import { Button, Paper } from '@material-ui/core';
 import getResponsiveImageSizes from '../../utils/getResponsiveImage';
 
 export const PostCardHeading = styled.h2`
@@ -77,7 +75,6 @@ const PostCard = ({ post, isHero = false, className = '' }) => {
 
   if (post.feature_image) srcset = getResponsiveImageSizes(post.feature_image);
 
-  const date = new Date(post.published_at);
   return (
     <BlueCard key={post.id} className={className}>
       <Grid container>
@@ -114,8 +111,6 @@ const PostCard = ({ post, isHero = false, className = '' }) => {
                 </Link>
               )
             )}
-            <DateField>{moment(date).format('ddd, ll')}</DateField>
-
             <Excerpt>{post.excerpt}</Excerpt>
           </CardContent>
         </Grid>

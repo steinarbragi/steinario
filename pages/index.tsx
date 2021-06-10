@@ -1,7 +1,6 @@
+import { Button, Container } from '@material-ui/core';
 import React, { ReactElement } from 'react';
 import styled from 'styled-components';
-import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
 import { Layout } from '../components/layout';
 import Social from '../components/social';
 

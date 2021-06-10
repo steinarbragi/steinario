@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
-import Header from './header/headerWithNav';
+import Header from './header/header';
 
 const LayoutStyle = css`
   flex: 1;

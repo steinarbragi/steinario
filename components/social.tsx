@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Twitter } from '@styled-icons/boxicons-logos/Twitter';
 import { Github } from '@styled-icons/boxicons-logos/Github';
 import { Linkedin } from '@styled-icons/boxicons-logos/Linkedin';
 import { Box, IconButton } from '@material-ui/core';
@@ -15,10 +14,6 @@ const SocialIcons = styled(Box)`
 
 const Social = () => (
   <SocialIcons>
-    <IconButton title="Twitter" href="https://twitter.com/steinarbragi">
-      <Twitter />
-    </IconButton>
-
     <IconButton title="Github" href="https://github.com/steinarbragi">
       <Github />
     </IconButton>

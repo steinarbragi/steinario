@@ -16,13 +16,6 @@ function Index(): ReactElement {
       <IndexContainer maxWidth="lg">
         <h1>Steinar Bragi Sigurðarson</h1>
         <h2>Web and Mobile Developer</h2>
-        <Button
-          href="/steinar-cv-1106.pdf"
-          color="secondary"
-          variant="contained"
-        >
-          Download CV
-        </Button>
         <Social />
       </IndexContainer>
     </Layout>

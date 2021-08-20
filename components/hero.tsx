@@ -8,7 +8,7 @@ export default function Hero() {
             Get in touch
           </p>
           <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-            I create scalable and modern web and mobile experiences.
+            I build scalable and modern web and mobile experiences.
           </p>
         </div>
       </div>

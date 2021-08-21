@@ -10,14 +10,14 @@ const supportLinks = [
     name: 'Web',
     href: '#contact',
     description:
-      "I've been building websites for over a decade. My tech stack is always evolving. I'm in love with React and Next.js and have years of expertise in JavaScript.",
+      "I've been building websites for over a decade. My tech stack is always evolving. I'm in love with React and Next.js and have many years of expertise in JavaScript.",
     icon: DesktopComputerIcon,
   },
   {
     name: 'Mobile',
     href: '#contact',
     description:
-      "Let's make an app! I'm experienced with React native and Flutter. Let's get that MVP running.",
+      "Do you have an interesting app idea? I'm experienced with React native and Flutter. Let's get that MVP running pronto.",
     icon: DeviceMobileIcon,
   },
   {
@@ -49,7 +49,7 @@ export default function Hero() {
             Get in touch
           </h1>
           <p className="mt-6 max-w-3xl text-xl text-gray-300">
-            {"Let's build awesome experiences on the web and mobile together."}
+            {"Let's build awesome web and mobile experiences."}
           </p>
         </div>
       </div>

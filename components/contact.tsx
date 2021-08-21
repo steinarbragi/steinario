@@ -26,27 +26,32 @@ const ValidatedField = ({
   label,
   fieldProps,
   textarea = false,
-}: ValidatedFieldProps) => (
-  <div>
-    <label
-      htmlFor={fieldName}
-      className={`${labelClasses} ${touched && errors && 'text-red-500'}`}
-    >
-      {label}
-    </label>
-    <div className="mt-1">
-      <input
-        type="text"
-        id="firstName"
-        {...fieldProps}
-        autoComplete="given-name"
-        rows={textarea ? 4 : 1}
-        className={`${fieldClasses} ${touched && errors && 'border-red-500'}`}
-      />
-      {touched && errors ? <div className="text-red-500">{errors}</div> : null}
+}: ValidatedFieldProps) => {
+  const TextOrInput = textarea ? 'textarea' : 'input';
+  return (
+    <div>
+      <label
+        htmlFor={fieldName}
+        className={`${labelClasses} ${touched && errors && 'text-red-500'}`}
+      >
+        {label}
+      </label>
+      <div className="mt-1">
+        <TextOrInput
+          type="text"
+          id="firstName"
+          {...fieldProps}
+          autoComplete="given-name"
+          rows={textarea ? 4 : 1}
+          className={`${fieldClasses} ${touched && errors && 'border-red-500'}`}
+        />
+        {touched && errors ? (
+          <div className="text-red-500">{errors}</div>
+        ) : null}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 function ContactForm() {
   const [success, setSuccess] = useState(false);

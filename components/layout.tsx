@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 import Header from './header';
+import Footer from './footer';
 
 type LayoutProps = {
   children: PropTypes.ReactElementLike;
@@ -15,6 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
       </Head>
       <Header />
       <main>{children}</main>
+      <Footer />
     </>
   );
 };

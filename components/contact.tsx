@@ -120,7 +120,7 @@ function ContactForm() {
             touched={formik.touched.firstName}
             errors={formik.errors.firstName}
             fieldName={'firstName'}
-            label="First name"
+            label="First name *"
             fieldProps={formik.getFieldProps('firstName')}
           />
           <ValidatedField
@@ -145,7 +145,7 @@ function ContactForm() {
               touched={formik.touched.email}
               errors={formik.errors.email}
               fieldName={'email'}
-              label="Email"
+              label="Email *"
               fieldProps={formik.getFieldProps('email')}
             />
           </div>
@@ -163,7 +163,7 @@ function ContactForm() {
               touched={formik.touched.message}
               errors={formik.errors.message}
               fieldName={'message'}
-              label="Message"
+              label="Message *"
               textarea
               fieldProps={formik.getFieldProps('message')}
             />

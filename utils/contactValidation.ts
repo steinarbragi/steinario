@@ -14,7 +14,8 @@ const contactValidation = Yup.object().shape({
     .max(50, 'Phone is too long'),
   message: Yup.string()
     .min(3, 'Message should be at least 3 characters')
-    .max(5000, 'Message is too long'),
+    .max(5000, 'Message is too long')
+    .required('Please write a message'),
 });
 
 export default contactValidation;

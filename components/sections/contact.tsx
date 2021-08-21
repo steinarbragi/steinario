@@ -1,9 +1,9 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
-import contactValidation from '../utils/contactValidation';
+import contactValidation from '../../utils/contactValidation';
 import emailjs from 'emailjs-com';
-import BackgroundPattern from './decoration/backgroundPattern';
+import BackgroundPattern from '../decoration/backgroundPattern';
 
 const fieldClasses =
   'py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md';

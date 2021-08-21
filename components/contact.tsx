@@ -210,7 +210,7 @@ export default function Contact() {
             Contact Me
           </h2>
           <p className="mt-4 text-lg leading-6 text-gray-500">
-            Drop me a line, tell me about your projects or ideas
+            Drop me a line, tell me about your company, projects or ideas.
           </p>
         </div>
         <div className="mt-12">

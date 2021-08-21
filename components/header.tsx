@@ -5,7 +5,7 @@ import { MailIcon, PhoneIcon } from '@heroicons/react/solid';
 const profile = {
   name: 'Steinar Bragi Sigurðarson',
   email: 's@steinar.io',
-  avatar: '/img/steinar.png',
+  avatar: '/img/steinar.jpg',
   backgroundImage:
     'https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80',
   fields: [

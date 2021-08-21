@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
+import { Switch } from '@headlessui/react';
 import contactValidation from '../../utils/contactValidation';
 import emailjs from 'emailjs-com';
 import BackgroundPattern from '../decoration/backgroundPattern';
@@ -18,6 +19,10 @@ type ValidatedFieldProps = {
   fieldProps: any;
   textarea?: boolean;
 };
+
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(' ');
+}
 
 const ValidatedField = ({
   touched,
@@ -54,6 +59,7 @@ const ValidatedField = ({
 };
 
 function ContactForm() {
+  const [agreed, setAgreed] = useState(false);
   const [success, setSuccess] = useState(false);
   const formik = useFormik({
     initialValues: {
@@ -131,13 +137,22 @@ function ContactForm() {
             fieldProps={formik.getFieldProps('lastName')}
           />
 
-          <div className="sm:col-span-2">
+          <div className="sm:col-span-1">
             <ValidatedField
               touched={formik.touched.company}
               errors={formik.errors.company}
               fieldName={'company'}
               label="Company"
               fieldProps={formik.getFieldProps('company')}
+            />
+          </div>
+          <div className="sm:col-span-1">
+            <ValidatedField
+              touched={formik.touched.phone}
+              errors={formik.errors.phone}
+              fieldName={'phone'}
+              label="Phone"
+              fieldProps={formik.getFieldProps('phone')}
             />
           </div>
           <div className="sm:col-span-2">
@@ -149,15 +164,7 @@ function ContactForm() {
               fieldProps={formik.getFieldProps('email')}
             />
           </div>
-          <div className="sm:col-span-2">
-            <ValidatedField
-              touched={formik.touched.phone}
-              errors={formik.errors.phone}
-              fieldName={'phone'}
-              label="Phone"
-              fieldProps={formik.getFieldProps('phone')}
-            />
-          </div>
+
           <div className="sm:col-span-2">
             <ValidatedField
               touched={formik.touched.message}
@@ -167,6 +174,36 @@ function ContactForm() {
               textarea
               fieldProps={formik.getFieldProps('message')}
             />
+          </div>
+          <div className="sm:col-span-2">
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <Switch
+                  checked={agreed}
+                  onChange={setAgreed}
+                  className={classNames(
+                    agreed ? 'bg-indigo-600' : 'bg-gray-200',
+                    'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                  )}
+                >
+                  <span className="sr-only">Agree to policies</span>
+                  <span
+                    aria-hidden="true"
+                    className={classNames(
+                      agreed ? 'translate-x-5' : 'translate-x-0',
+                      'inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200'
+                    )}
+                  />
+                </Switch>
+              </div>
+              <div className="ml-3">
+                <p className="text-gray-500 font-extralight text-base">
+                  {`I agree that that this toggle is turned ${
+                    agreed ? 'on' : 'off'
+                  }.`}
+                </p>
+              </div>
+            </div>
           </div>
           <div className="sm:col-span-2">
             <button

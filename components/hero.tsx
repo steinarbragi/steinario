@@ -8,21 +8,21 @@ import {
 const supportLinks = [
   {
     name: 'Web',
-    href: 'mailto:s@steinar.io?subject=Help me build a website',
+    href: '#contact',
     description:
       "I've been building websites for over a decade. My tech stack is always evolving. I love React and Next.js these days.",
     icon: DesktopComputerIcon,
   },
   {
     name: 'Mobile',
-    href: "mailto:s@steinar.io?subject=Let's build an app!",
+    href: '#contact',
     description:
       "Let's make an app! I'm experienced with react-native and flutter.",
     icon: DeviceMobileIcon,
   },
   {
     name: 'Cloud',
-    href: 'mailto:s@steinar.io',
+    href: '#contact',
     description:
       "Let's geek out with serverless functions and microservices. I can also build and maintain CI/CD and DevOps pipelines.",
     icon: CloudIcon,

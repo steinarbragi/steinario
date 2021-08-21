@@ -42,7 +42,6 @@ const Header = () => {
             </div>
             <div className="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
               <a
-                type="button"
                 href="mailto:s@steinar.io"
                 className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
               >
@@ -53,7 +52,6 @@ const Header = () => {
                 <span>Message</span>
               </a>
               <a
-                type="button"
                 href="tel:+3548473439"
                 className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
               >

@@ -5,10 +5,9 @@ import { MailIcon, PhoneIcon } from '@heroicons/react/solid';
 const profile = {
   name: 'Steinar Bragi Sigurðarson',
   email: 's@steinar.io',
-  avatar:
-    'https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+  avatar: '/img/steinar.png',
   backgroundImage:
-    'https://images.unsplash.com/photo-1504829857797-ddff29c27927?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    'https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80',
   fields: [
     ['Phone', '(+354) 847-3439'],
     ['Email', 's@steinar.io'],
@@ -31,7 +30,7 @@ const Header = () => {
           <div className="flex">
             <img
               className="h-24 w-24 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
-              src="/img/steinar.png"
+              src={profile.avatar}
               alt=""
             />
           </div>

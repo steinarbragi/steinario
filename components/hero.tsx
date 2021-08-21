@@ -49,7 +49,7 @@ export default function Hero() {
             Get in touch
           </h1>
           <p className="mt-6 max-w-3xl text-xl text-gray-300">
-            I build modern and scalable web and mobile experiences.
+            Let's build awesome experiences on the web and mobile together.
           </p>
         </div>
       </div>

@@ -198,9 +198,15 @@ function ContactForm() {
               </div>
               <div className="ml-3">
                 <p className="text-gray-500 font-extralight text-base">
-                  {`I agree that that this toggle is turned ${
-                    agreed ? 'on' : 'off'
-                  }.`}
+                  By selecting this, you agree to the{' '}
+                  <a
+                    className="text-gray-700 underline"
+                    target="_blank"
+                    href="https://www.freeprivacypolicy.com/live/0d59427f-a0fc-4616-ab82-35ad89d64e02"
+                    rel="noreferrer"
+                  >
+                    Privacy Policy
+                  </a>
                 </p>
               </div>
             </div>

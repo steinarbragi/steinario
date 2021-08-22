@@ -10,9 +10,6 @@ const Intro = () => (
         <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
           I build websites and apps.
         </p>
-        <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-          I am driven by curiosity and a passion to solve difficult problems.
-        </p>
       </div>
     </div>
   </div>

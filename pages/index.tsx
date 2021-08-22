@@ -9,7 +9,7 @@ function Index(): ReactElement {
     <Layout>
       <>
         <Intro />
-        <Hero />
+
         <Contact />
       </>
     </Layout>

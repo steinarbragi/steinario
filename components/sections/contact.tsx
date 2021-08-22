@@ -112,9 +112,6 @@ function ContactForm() {
         <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
           Contact Me
         </h2>
-        <p className="mt-4 text-lg leading-6 text-gray-500">
-          Drop me a line, tell me about your company, projects or ideas.
-        </p>
       </div>
       <div className="mt-12">
         <form
@@ -160,7 +157,7 @@ function ContactForm() {
               touched={formik.touched.email}
               errors={formik.errors.email}
               fieldName={'email'}
-              label="Email *"
+              label="Email address *"
               fieldProps={formik.getFieldProps('email')}
             />
           </div>

@@ -10,7 +10,7 @@ const supportLinks = [
     name: 'Web',
     href: '#contact',
     description:
-      "I've been building websites for over a decade. My tech stack is always evolving. I'm in love with React and Next.js and have many years of expertise in JavaScript.",
+      "I've been building websites for over a decade. I'm always expanding my toolbox and learning new tricks. I strive for great performance, UX, accessibilty and cross-device compatability.",
     icon: DesktopComputerIcon,
   },
   {
@@ -24,7 +24,7 @@ const supportLinks = [
     name: 'Cloud',
     href: '#contact',
     description:
-      "Let's geek out with serverless functions and microservices. I can also build and maintain CI/CD and DevOps pipelines.",
+      "I like to work with serverless architecture and microservices. I can also build and maintain CI/CD and DevOps pipelines. I've worked with various authentication solutions and built scalable APIs.",
     icon: CloudIcon,
   },
 ];

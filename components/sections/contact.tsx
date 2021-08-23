@@ -110,7 +110,7 @@ function ContactForm() {
     <>
       <div className="text-center">
         <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          Contact Me
+          Get in touch
         </h2>
       </div>
       <div className="mt-12">
